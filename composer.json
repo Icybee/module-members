@@ -1,0 +1,30 @@
+{
+	"name": "icybee/module-members",
+	"type": "icanboogie-module",
+	"description": "Manages the members of the CMS Icybee",
+	"keywords": [ "members" ],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Olivier Laviale",
+			"email": "olivier.laviale@gmail.com",
+			"homepage": "http://www.weirdog.com/",
+			"role" : "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/Icybee/module-members/issues",
+		"source": "https://github.com/Icybee/module-members"
+	},
+	"require": {
+		"php": ">=5.4",
+		"icanboogie/module-installer": "~1.2",
+		"icybee/user": "~2.0"
+	},
+	"autoload": {
+		"psr-4": { "Icybee\\Modules\\Members\\" : "lib" }
+	},
+	"scripts": {
+		"post-autoload-dump": "ICanBoogie\\AutoConfig\\Hooks::on_autoload_dump"
+	}
+}
